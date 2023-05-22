@@ -1,0 +1,22 @@
+# Task selection(0 = classification, 1 = Object detection, 2 = Semantic Segmentation)
+Task = 0 
+
+# model selection
+# Classifcation = resnet50, resnet101, Alexnet
+# Object detection = YoloV8s, Faster R-CNN
+# Segmentation = U-net, DeepLabV3+
+model=YoloV8s
+
+# dir_data = 원본 이미지 directory
+#  dir_label = 라벨 데이터 directory
+dir_data = "D:/Project/CNN/data"
+dir_label = "D:/Project/CNN/data"
+
+# epoch = 반복횟수(int)
+# lr = learning rate(float)
+# batch_size = batch 사이즈(int)
+# optimizer = adam, SGD
+epoch = 200
+lr = 1e-3
+batch_size = 16
+optimizer = adam
