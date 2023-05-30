@@ -41,11 +41,13 @@ def classification_training():
     optimizer_type      = "sgd"
     momentum            = 0.9
     weight_decay        = 5e-4
+
     lr_decay_type       = "cos"
     save_period         = 10
     save_dir            = 'logs'
-    num_workers         = 4
     
+    num_workers         = 4
+
     train_annotation_path   = "cls_train.txt"
     test_annotation_path    = 'cls_test.txt'
     ngpus_per_node  = torch.cuda.device_count()

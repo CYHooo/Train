@@ -10,7 +10,7 @@ model=Faster R-CNN
 # dir_data = 원본 이미지 directory
 # dir_label = 라벨 데이터 directory
 dir_data = D:/Project/CNN/LX/data/objectdetection/Yangpyeong_01-03.v62-lx_0426_1_2.voc/train/img
-dir_label = D:/Project/CNN/LX/data/objectdetection/Yangpyeong_01-03.v62-lx_0426_1_2.voc/train/label
+dir_label = D:/Project/CNN/LX/data/objectdetection/Yangpyeong_01-03.v62-lx_0426_1_2.voc/train/mask
 
 # epoch = 반복횟수(int)
 # lr = learning rate(float)

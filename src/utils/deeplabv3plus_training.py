@@ -19,7 +19,7 @@ from src.utils.deeplabv3plus_utils_fit import fit_one_epoch
 from src.utils.deeplabc3plus_voc_annotation import init_format
 
 
-def Deeplabv3plus_training(model, dir_label, label_num, epochs, lr,dir_data, optimizer):
+def Deeplabv3plus_training(model, dir_label, label_num, epochs, lr, dir_data, optimizer):
     init_format(dir_label)
     input_shape         = [512, 512]
 
@@ -53,7 +53,7 @@ def Deeplabv3plus_training(model, dir_label, label_num, epochs, lr,dir_data, opt
     dice_loss       = False
     focal_loss      = False
     cls_weights     = np.ones([num_classes], np.float32)
-    num_workers         = 1
+    num_workers         = 5
     ngpus_per_node  = torch.cuda.device_count()
 
     if distributed:

@@ -3,3 +3,7 @@ __pycache__/
 data/
 weight/
 .temp_map_out/
+*.zip
+*.pt
+runs/
+*.txt

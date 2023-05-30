@@ -29,6 +29,3 @@ def train_objectdetection(config, label):
         model.train(data=dir_data, epochs=epochs, batch=batch_size, imgsz=1024, device=device, optimizer=optimizer)
     elif model.lower() == 'faster r-cnn':
         fast_rcnn_training(model, dir_label, label, epochs, lr, dir_data, optimizer)
-
-    
-

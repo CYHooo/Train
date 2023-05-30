@@ -20,7 +20,7 @@ if __name__ =="__main__":
     if config['task'] == 1: ## object detection
         label = ["building","vinyl house"]
         weight = train_objectdetection(config, label)
-        
+
     if config['task'] == 2: ## segmentation
         label_num = 2
         weight = train_segmentation(config, label_num)
