@@ -30,6 +30,8 @@
 - Training code, get config from '*training_parameter.txt*'
 
 ### src
-- source code folder, |--src
-                          |--nets
-                          |--utils            
+- source code folder for model network and utils files
+
+      |--src    
+          |--nets
+          |--utils                
